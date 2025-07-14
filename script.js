@@ -108,3 +108,9 @@ const footballTeams = [
 console.log(footballTeams);
 
 //Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+
+for (let i = 0; i < footballTeams.length; i++) {
+  
+  footballTeams[i].pointsMade = Math.floor(Math.random() * 30) + 1;
+  footballTeams[i].foulsDrawn = Math.floor(Math.random() * 30) + 1;
+}
