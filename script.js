@@ -110,7 +110,14 @@ console.log(footballTeams);
 //Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 
 for (let i = 0; i < footballTeams.length; i++) {
-  
+
   footballTeams[i].pointsMade = Math.floor(Math.random() * 30) + 1;
   footballTeams[i].foulsDrawn = Math.floor(Math.random() * 30) + 1;
 }
+
+/*Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */ 
+
+ let teamsFouls = [];
+
+teamsFouls = footballTeams.map (({name,foulsDrawn}) => ({name,foulsDrawn}));
+ console.log(teamsFouls);
