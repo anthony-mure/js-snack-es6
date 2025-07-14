@@ -33,4 +33,19 @@ const bikes = [
 ];
 
 console.log(bikes);
-    
+
+/*Stampare a schermo la bici con peso minore. */
+
+const lightWeight = [];
+
+for(let i=0; i<bikes.length; i++){
+
+   const bikesKg = bikes[i];
+   
+   if(bikes.kilogram < 6.9){
+
+    lightWeight.push(bikesKg);
+   }
+}
+
+console.log(lightWeight);
